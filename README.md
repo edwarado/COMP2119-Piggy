@@ -8,7 +8,7 @@ Lo Kai Yeung (3035708962)
 A total of 99 cards from the number ‘1’ to ‘99’. Each card will not randomly be assigned piggy. A total of 4 players including 1 real player and 3 computer players. 
 
 
-PREPARATION
+### PREPARATION
 The player chooses his name first prior to the start of the game. Shuffle the cards and deal 8 cards to the 4 players. Do not show the cards to the others.
 
 
