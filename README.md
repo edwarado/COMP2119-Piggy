@@ -13,7 +13,7 @@ A total of 99 cards from the number ‘1’ to ‘99’. Each card will not rand
 The player chooses his name first prior to the start of the game. Shuffle the cards and deal 8 cards to the 4 players. Do not show the cards to the others.
 
 
-Make four rows
+### Make four rows
 
 Four cards from the remaining deck would be shown. Each of these cards is the first card in a row, in which there may not be more than 5 cards, including this first one. 
 
