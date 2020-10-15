@@ -1,7 +1,7 @@
 # PIGGY
  
  
-Cheung Hoi Ki (3035705075)
+Cheung Hoi Ki (3035705075) <br/>
 Lo Kai Yeung (3035708962)
  
  
@@ -49,17 +49,21 @@ The game will be over when all players played all 8 cards. The final scores will
 ## 2. Game Features
 
 ### Generation of random game sets or events
-To make sure that each game will have a different game set, first of all, each card(1-99) will be assigned a random number of piggies(1-5). During the preparation, the cards will be randomly shuffled and distributed to players. Bots also play by picking cards randomly according to the chosen difficulty. 
+To make sure that each game will have a different game set, first of all, each card (1-99) will be assigned a random number of piggies (1-5). During the preparation, the cards will be shuffled and distributed to the players. Bots also play by picking cards according to the chosen difficulty. 
+ 
  
 ### Data structures for storing game status
-We use parallel arrays to store card information and the number of piggies of each card. We also create 4 independent arrays to store cards in hand of each player and 4 arrays to store cards on each row. Integer variables are used to store how many piggies a player has. String variables are used to store the name of the player.
+We use parallel arrays to store card information and the number of piggies of each card. We also create 4 independent arrays to store cards in the hand of each player and 4 arrays to store cards on each row. Integer variables are used to store the number of piggies a player has. String variables are used to store the name of the player.
+ 
  
 ### Dynamic memory management
-After each round, data stored in arrays will be updated constantly by using pointers, including existing cards in a row,  the number cards are left in hand for each player. 
-
+The cards in each player’s lost zone would be stored as a linked list. The total score for each player would be calculated by traversing each player’s linked list.
+ 
  
 ### File input/output (e.g., for loading/saving game status)
-As variables in a program are volatile, we need a file to save unfinished game status. Once the program is run, we will generate a file to store game information. When the player inputs a command to leave the game halfway, the program will store the necessary data into the file such as existing cards in a row,  how many cards are left in hand for each player. When the program is loaded next time, it will check if there is an existing file to resume a game. Data in the file will be retrieved and put into the variables again.
+As variables in a program will change during the gameplay, we need a file to save unfinished game status. Once the program is run, we will generate a file to store game information. When the player inputs a command to leave the game halfway, the program will store the necessary data into the file such as existing cards in a row, the number of cards is left in hand for each player. When the program is loaded next time, it will check if there is an existing file to resume a game. Data in the file will be retrieved and put into the variables again.
+ 
  
 ### Program codes in multiple files
-We will split our program into mainly three parts, preparation(shuffling and distributing card), the main algorithm of the game and file input and output process. By doing so, the main algorithm can be reused to write other programs but with different features customized. 
+We will split our program into mainly three parts, preparation (shuffling and distributing card), the main algorithm of the game and file input and output process. By doing so, the main algorithm can be reused to write other programs but with different features customized. 
+
