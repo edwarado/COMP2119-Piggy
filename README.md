@@ -65,5 +65,5 @@ As variables in a program will change during the gameplay, we need a file to sav
  
  
 ### Program codes in multiple files
-We will split our program into mainly three parts, preparation (shuffling and distributing card), the main algorithm of the game and file input and output process. By doing so, the main algorithm can be reused to write other programs but with different features customized. 
+We will split our program into mainly three parts, preparation (shuffling and distributing cards), the main algorithm of the game and file input and output process. By doing so, the main algorithm can be reused to write other programs but with different features customized. 
 
