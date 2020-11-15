@@ -56,7 +56,7 @@ We use arrays to store card information. We also create 4 independent arrays to 
 
 
 ### Dynamic memory management
-Cards in hand and cards on each row would be stored as a dynamic arrays.
+Cards in hand and cards on each row would be stored as dynamic arrays.
  
  
 ### File input/output (e.g., for loading/saving game status)
