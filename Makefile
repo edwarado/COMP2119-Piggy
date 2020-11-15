@@ -1,7 +1,7 @@
 FLAGS = -pedantic-errors -std=c++11
 
 main: cards.o main.o
-  g++ $(FLAGS) cards.o main.o -o main
+	g++ $(FLAGS) cards.o main.o -o main
 
 cards.o: cards.cpp cards.h
 	g++ $(FLAGS) -c cards.cpp
