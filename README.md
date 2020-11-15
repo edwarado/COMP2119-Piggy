@@ -64,5 +64,5 @@ Once the program is run, we will generate a file to store game information. When
  
  
 ### Program codes in multiple files
-We will split our program into mainly two parts, the main algorithm of the game and cards functions(e.g. print cards by graphic, return positions of cards). By doing so, the main algorithm can be reused to write other programs but with different features customized. 
+We will split our program into mainly two parts, the main algorithm of the game and cards functions(e.g. print cards with graphics, return positions of cards). By doing so, the main algorithm can be reused to write other programs but with different features customized. 
 
