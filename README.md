@@ -37,7 +37,7 @@ A row with 5 cards is full. If Rule No. 2 would put the fifth card in such a row
  
 ### Rule 4: the smallest card
  
-If one player plays a card with a number that is smaller than the last current card in each row. That player needs to pick up all the cards of a row and the player has a choice to pick which row. The player’s card will become the first card of the new row.
+If one player plays a card with a number that is smaller than the last current card in each row. That player needs to pick up all the cards of a row. The player’s card will become the first card of the new row.
  
  
 ### End of the game
