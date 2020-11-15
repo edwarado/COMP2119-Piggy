@@ -8,12 +8,12 @@ Lo Kai Yeung (3035708962)
  
 ## 1. Game Description
  
-A total of 99 cards from the number 1 to 99. Each card will not randomly be assigned piggies, which can be considered as negative scores. A total of 4 players including 1 real player and 3 bots. 
+A total of 99 cards from the number of piggies 1 to 99. A total of 4 players including 1 real player and 3 bots. 
  
  
 ### Preparation
  
-The player will choose the name first and the difficulty of the game. The cards would be shuffled and distribute 8 cards to all players. The cards would not be shown to other players.
+The player will choose the name first. The cards would be shuffled and distribute 8 cards to all players. The cards would not be shown to other players.
  
  
 ### Gameplay
@@ -49,21 +49,20 @@ The game will be over when all players played all 8 cards. The final scores will
 ## 2. Game Features
 
 ### Generation of random game sets or events
-To make sure that each game will have a different game set, first of all, each card (1-99) will be assigned a random number of piggies (1-5). During the preparation, the cards will be shuffled and distributed to the players. Bots also play by picking cards according to the chosen difficulty. 
- 
+To make sure that each game will have a different game set, During the preparation, the cards will be shuffled and randomly distributed to the players and the initial rows.
  
 ### Data structures for storing game status
-We use parallel arrays to store card information and the number of piggies of each card. We also create 4 independent arrays to store cards in the hand of each player and 4 arrays to store cards on each row. Integer variables are used to store the number of piggies a player has. String variables are used to store the name of the player.
- 
- 
+We use arrays to store card information. We also create 4 independent arrays to store cards in the hand of each player and 4 arrays to store cards on each row. An array with 4 slots are used to store the number of piggies players have. String variables are used to store the name of the player.
+
+
 ### Dynamic memory management
-The cards in each player’s lost zone would be stored as a linked list. The total score for each player would be calculated by traversing each player’s linked list.
+Cards in hand and cards on each row would be stored as a dynamic arrays.
  
  
 ### File input/output (e.g., for loading/saving game status)
-As variables in a program will change during the gameplay, we need a file to save unfinished game status. Once the program is run, we will generate a file to store game information. When the player inputs a command to leave the game halfway, the program will store the necessary data into the file such as existing cards in a row, the number of cards is left in hand for each player. When the program is loaded next time, it will check if there is an existing file to resume a game. Data in the file will be retrieved and put into the variables again.
+Once the program is run, we will generate a file to store game information. When a game has ended, we write the game result into the textfile. When the program is loaded next time, it will check if there is an existing file of game history. Data in the file will be retrieved and printed out.
  
  
 ### Program codes in multiple files
-We will split our program into mainly three parts, preparation (shuffling and distributing cards), the main algorithm of the game and file input and output process. By doing so, the main algorithm can be reused to write other programs but with different features customized. 
+We will split our program into mainly two parts, the main algorithm of the game and cards functions(e.g. print cards by graphic, return positions of cards). By doing so, the main algorithm can be reused to write other programs but with different features customized. 
 
