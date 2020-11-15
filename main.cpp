@@ -342,7 +342,7 @@ int main() {
   stringstream sstream(str1); //convert the string to integer
   int roundnum;
   sstream >> roundnum; 
-  cout << "This is round " << roundnum << "." <<endl;
+  cout << "This is round " << roundnum+1 << "." <<endl;
   cout << endl;
   
   //sort the cards in hand of all players
