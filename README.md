@@ -1,8 +1,8 @@
 # PIGGY
  
  
-Cheung Hoi Ki (3035705075) <br/>
-Lo Kai Yeung (3035708962)
+Cheung Hoi Ki  <br/>
+Lo Kai Yeung 
  
  
  
